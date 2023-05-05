@@ -14,23 +14,21 @@ export function Home() {
     <HomeContainer>
       <form action="">
         <FormContainer>
-          <div>
-            <label htmlFor="task">I will work in</label>
-            <TaskInput
-              id="task"
-              type="text"
-              placeholder="Give a nice name to your project"
-            />
+          <label htmlFor="task">I will work in</label>
+          <TaskInput
+            id="task"
+            type="text"
+            placeholder="Give a nice name to your project"
+          />
 
-            <label htmlFor="minutesAmount">while</label>
-            <MinutesAmountInput
-              id="minutesAmount"
-              type="number"
-              placeholder="00"
-            />
+          <label htmlFor="minutesAmount">while</label>
+          <MinutesAmountInput
+            id="minutesAmount"
+            type="number"
+            placeholder="00"
+          />
 
-            <span>minutes.</span>
-          </div>
+          <span>minutes.</span>
         </FormContainer>
 
         <CountDownContainer>
