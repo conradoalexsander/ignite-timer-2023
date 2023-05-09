@@ -1,12 +1,12 @@
 import { Play } from "phosphor-react";
 import {
-    CountDownContainer,
-    FormContainer,
-    HomeContainer,
-    MinutesAmountInput,
-    Separator,
-    StartCountdownButton,
-    TaskInput,
+  CountDownContainer,
+  FormContainer,
+  HomeContainer,
+  MinutesAmountInput,
+  Separator,
+  StartCountdownButton,
+  TaskInput,
 } from "./styles";
 
 export function Home() {
@@ -19,13 +19,24 @@ export function Home() {
             id="task"
             type="text"
             placeholder="Give a nice name to your project"
+            list="task-suggestions"
           />
+
+          <datalist id="task-suggestions">
+            <option value="Projeto 1" />
+            <option value="Projeto 2" />
+            <option value="Projeto 3" />
+            <option value="Projeto 4" />
+          </datalist>
 
           <label htmlFor="minutesAmount">while</label>
           <MinutesAmountInput
             id="minutesAmount"
             type="number"
             placeholder="00"
+            step={5}
+            min={5}
+            max={60}
           />
 
           <span>minutes.</span>
